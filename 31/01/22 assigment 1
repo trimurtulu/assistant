@@ -1,0 +1,84 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int c,frist,last,middle,n,search,array[100];
+    printf("enter number of elements\n");
+    scanf("%d", &n);
+    printf("enter %d integer\n",n);
+    for(c=0;c<n; c++)
+    scanf("%d", &array[c]);
+    printf("enter value of find\n");
+    scanf("%d",&search);
+    frist=0;
+    last=n-1;
+    middle=(frist+last)/2;
+    while(frist<=last){
+        if (array[middle]<search)
+        frist=middle+1;
+        else if(array[middle]==search){
+            printf("%d found at location %d.\n",search,middle+1);
+            break;
+        }
+        else
+        last=middle-1;
+        middle=(frist=last)/2;
+    }
+    if (frist>last)
+    printf("Not found!  isn't present in the last.\n, search");
+    return 0;       
+    }
+    
+
+    
+
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int c,frist,last,middle,n,search,array[100];
+    printf("enter number of elements\n");
+    scanf("%d", &n);
+    printf("enter %d integer\n",n);
+    for(c=0;c<n; c++)
+    scanf("%d", &array[c]);
+    printf("enter value of find\n");
+    scanf("%d",&search);
+    frist=0;
+    last=n-1;
+    middle=(frist+last)/2;
+    while(frist<=last){
+        if (array[middle]<search)
+        frist=middle+1;
+        else if(array[middle]==search){
+            printf("%d found at location %d.\n",search,middle+1);
+            break;
+        }
+        else
+        last=middle-1;
+        middle=(frist=last)/2;
+    }
+    if (frist>last)
+    printf("Not found!  isn't present in the last.\n, search");
+    return 0;       
+    }
+    
+
+    
+
