@@ -1,0 +1,1 @@
+alter table student add total char(10), avg char(20));
