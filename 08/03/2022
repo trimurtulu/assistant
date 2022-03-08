@@ -1,0 +1,1 @@
+create table student (sno int, sname char(10), sgroup char(10), maths char(10), physics char(10),computers char(10));
